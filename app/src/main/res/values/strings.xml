@@ -43,10 +43,35 @@
     <string name="car_details">Car Details</string>
     <string name="qwertyujhbgvfd">Fill up the details</string>
     <string name="manufacturer">Manufacturer *</string>
-    <string name="manufacturing_year">Manufacturing Year</string>
+    <string name="manufacturing_year">Manufacturing Year *</string>
     <string name="car_model">Car Model *</string>
     <string name="tata_motors">Tata Motors</string>
     <string name="_2023">2023</string>
     <string name="tata_altroz">Tata Altroz</string>
     <string name="qwerftgyhgfdsasdfvgbn">next</string>
+
+
+    <string-array name="services">
+        <item>Yes</item>
+        <item>No</item>
+    </string-array>
+
+    <string-array name="doneWhere">
+        <item>Authorised Workshop</item>
+        <item>Organised Multibrand</item>
+        <item>Local Garage</item>
+    </string-array>
+
+    <string-array name="scheduledWhen">
+        <item>This month</item>
+        <item>Next month</item>
+        <item>Other</item>
+    </string-array>
+
+    <string-array name="avg">
+        <item>0 - 1K</item>
+        <item>1K - 2K</item>
+        <item>2K - 3K</item>
+        <item>3K - above</item>
+    </string-array>
 </resources>

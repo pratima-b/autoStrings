@@ -1,8 +1,10 @@
 package com.example.autoinsight
 
+import android.content.Intent
 import android.graphics.Color
 import android.os.Bundle
 import android.os.CountDownTimer
+import android.widget.Button
 import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
@@ -33,12 +35,17 @@ class OtpActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_otp)
 
-        //var resendTextView = this.findViewById<TextView>(R.id.resendTextView)
+        val verify = this.findViewById<Button>(R.id.verify)
+        verify.setOnClickListener {
+            val intent = Intent(this, PersonalActivity::class.java).apply {
+            }
+            startActivity(intent)
+        }
 
         resendTextView = findViewById(R.id.resendTextView)
         startCountdownTimer()
 
-        val dbHelper = DBHelper(applicationContext)
+        /*val dbHelper = DBHelper(applicationContext)
 
         dbHelper.addData(
             j.text.toString(),
@@ -58,17 +65,7 @@ class OtpActivity : AppCompatActivity() {
             applicationContext,
             "data added",
             Toast.LENGTH_SHORT)
-            .show()
-
-        /*val intent = Intent(this, PersonalActivity::class.java).apply {
-            Toast.makeText(
-                applicationContext,
-                "Data added",
-                Toast.LENGTH_SHORT
-            )
-        }
-        startActivity(intent)*/
-
+            .show()*/
 
     }
     private fun startCountdownTimer() {

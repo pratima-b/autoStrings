@@ -12,7 +12,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="10dp"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="40dp"
         android:layout_marginEnd="10dp"
         android:src="@drawable/undraw_automobile_repair_ywci__1_"
         app:layout_constraintEnd_toEndOf="parent"
@@ -25,7 +25,7 @@
         android:id="@+id/appName"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="30dp"
         android:fontFamily="@font/wendy_one"
         android:text="@string/autoinsight"
         android:textAlignment="center"
@@ -41,15 +41,16 @@
 
     <ImageView
         android:id="@+id/autoStringsLogo"
-        android:layout_width="968dp"
-        android:layout_height="449dp"
-        android:layout_marginTop="520dp"
-        android:src="@drawable/logo_foreground"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_marginTop="672dp"
+        android:contentDescription="@string/autoLogo"
+        android:foregroundGravity="center"
+        android:src="@drawable/logo"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:contentDescription="@string/autoLogo"
         tools:ignore="VisualLintBounds" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

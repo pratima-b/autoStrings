@@ -42,7 +42,7 @@ class SplashActivity : AppCompatActivity() {
         autoStringsLogo.animation = bottomAnim
 
         val r = Runnable {
-            val intent= Intent(this,PersonalActivity::class.java).apply{
+            val intent= Intent(this,LoginActivity::class.java).apply{
 
             }
             startActivity(intent)

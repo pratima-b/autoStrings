@@ -30,7 +30,7 @@ class CarActivity : AppCompatActivity() {
                 )
                     .show()
             } else {
-                val intent = Intent(this, ContactActivity::class.java).apply {
+                val intent = Intent(this, StatusActivity::class.java).apply {
                 }
                 startActivity(intent)
             }

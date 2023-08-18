@@ -47,7 +47,7 @@
                     android:layout_gravity="center"
                     android:layout_marginBottom="20dp"
                     android:contentDescription="@string/q"
-                    android:src="@drawable/one"
+                    android:src="@drawable/two__1_"
                     tools:ignore="ImageContrastCheck" />
 
             </LinearLayout>
@@ -271,6 +271,7 @@
             android:background="@drawable/custom_btn"
             android:text="@string/next"
             android:layout_marginTop="15dp"
+            android:layout_marginBottom="20dp"
             android:textAllCaps="true"
             android:layout_marginStart="20dp"
             android:layout_marginEnd="20dp"

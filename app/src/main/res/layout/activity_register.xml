@@ -4,122 +4,44 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".PersonalActivity"
+    tools:context=".RegisterActivity"
     android:background="#ffffff"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:padding="30dp">
 
     <LinearLayout
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
-        <LinearLayout
+        <ImageView
+            android:layout_width="319dp"
+            android:layout_height="259dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:contentDescription="@string/todo"
+            android:src="@drawable/undraw_access_account_re_8spm" />
+
+        <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="40dp"
-                android:fontFamily="@font/poppins_bold"
-                android:text="@string/car_details"
-                android:textAlignment="center"
-                android:textAllCaps="false"
-                android:textColor="@color/black"
-                android:textSize="35sp"/>
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/montserrat"
-                android:text="@string/qwertyujhbgvfd"
-                android:textAllCaps="false"
-                android:layout_marginBottom="10dp"
-                android:gravity="center"
-                android:textColor="@color/black"
-                android:textSize="15sp"/>
-
-            <ImageView
-                android:layout_width="350dp"
-                android:layout_height="50dp"
-                android:layout_gravity="center"
-                android:layout_marginBottom="20dp"
-                android:contentDescription="@string/bv"
-                android:src="@drawable/three__1_"
-                tools:ignore="ImageContrastCheck" />
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:id="@+id/linearLayoutjj3"
-            android:layout_width="375dp"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="20dp"
-            android:layout_marginEnd="20dp"
-            android:background="@drawable/border"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/poppins_bold"
             android:gravity="center"
-            android:orientation="vertical"
-            android:padding="10dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/imageView">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="8dp"
-                android:gravity="center_vertical"
-                android:orientation="horizontal"
-                tools:ignore="UseCompoundDrawables">
-
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="20dp"
-                    android:contentDescription="@string/dvdv"
-                    android:src="@drawable/baseline_app_registration_24" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="10dp"
-                    android:fontFamily="@font/montserrat_medium"
-                    android:text="Registration Number *"
-                    android:textSize="17sp"
-                    tools:ignore="TextContrastCheck" />
-            </LinearLayout>
-
-            <EditText
-                android:id="@+id/regNo"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
-                android:autofillHints=""
-                android:background="@drawable/border"
-                android:drawablePadding="8dp"
-                android:fontFamily="@font/montserrat"
-                android:hint="AB 99 XY 1234"
-                android:inputType="text"
-                android:minHeight="48dp"
-                android:padding="8dp"
-                android:textColor="@color/black"
-                tools:ignore="VisualLintTextFieldSize" />
-
-        </LinearLayout>
+            android:text="Register"
+            android:textColor="@color/black"
+            android:textSize="35sp"/>
 
         <LinearLayout
             android:id="@+id/linearLayout3"
-            android:layout_width="375dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginStart="20dp"
-            android:layout_marginEnd="20dp"
-            android:layout_marginTop="20dp"
             android:background="@drawable/border"
             android:gravity="center"
             android:orientation="vertical"
             android:padding="10dp"
+            android:layout_marginTop="10dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
@@ -128,53 +50,48 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="8dp"
                 android:gravity="center_vertical"
                 android:orientation="horizontal"
+                android:layout_marginTop="8dp"
                 tools:ignore="UseCompoundDrawables">
 
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="20dp"
-                    android:contentDescription="@string/dvdv"
-                    android:src="@drawable/baseline_car_repair_24" />
+                    android:src="@drawable/baseline_person_24"
+                    android:contentDescription="@string/c" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="10dp"
                     android:fontFamily="@font/montserrat_medium"
-                    android:text="@string/manufacturer"
-                    android:textSize="17sp"
-                    tools:ignore="TextContrastCheck" />
+                    android:text="Employee ID *"
+                    android:textSize="18sp" />
             </LinearLayout>
 
             <EditText
-                android:id="@+id/manf"
+                android:id="@+id/firstName"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="15dp"
                 android:autofillHints=""
                 android:background="@drawable/border"
                 android:drawablePadding="8dp"
                 android:fontFamily="@font/montserrat"
-                android:hint="@string/tata_motors"
+                android:hint="EMP123"
                 android:inputType="text"
-                android:minHeight="48dp"
-                android:padding="8dp"
+                android:padding="10dp"
                 android:textColor="@color/black"
-                tools:ignore="VisualLintTextFieldSize" />
-
+                tools:ignore="TouchTargetSizeCheck,TextContrastCheck,VisualLintTextFieldSize" />
         </LinearLayout>
 
         <LinearLayout
-            android:id="@+id/linearLayout17"
+            android:id="@+id/linerLayout17"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginStart="20dp"
-            android:layout_marginTop="20dp"
-            android:layout_marginEnd="20dp"
+            android:layout_marginTop="15dp"
             android:background="@drawable/border"
             android:gravity="center"
             android:orientation="vertical"
@@ -196,34 +113,34 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="20dp"
-                    android:src="@drawable/baseline_directions_car_24"
-                    android:contentDescription="@string/dvd" />
+                    android:src="@drawable/baseline_email_24"
+                    android:contentDescription="@string/dfg" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="10dp"
                     android:fontFamily="@font/montserrat_medium"
-                    android:text="@string/car_model"
+                    android:text="Email ID *"
                     android:textSize="17sp"
                     tools:ignore="TextContrastCheck" />
 
             </LinearLayout>
 
             <EditText
-                android:id="@+id/model"
+                android:id="@+id/email"
                 android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:layout_marginTop="20dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="15dp"
                 android:background="@drawable/border"
                 android:drawablePadding="8dp"
                 android:fontFamily="@font/montserrat"
-                android:hint="@string/tata_altroz"
+                android:hint="@string/johndoe_gmail_com"
                 android:inputType="text"
                 android:padding="8dp"
                 android:textColor="@color/black"
-                android:autofillHints=""
-                tools:ignore="VisualLintTextFieldSize" />
+                tools:ignore="TextFields,VisualLintTextFieldSize"
+                android:autofillHints="" />
 
 
         </LinearLayout>
@@ -232,9 +149,7 @@
             android:id="@+id/linearLayout17"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginStart="20dp"
-            android:layout_marginTop="20dp"
-            android:layout_marginEnd="20dp"
+            android:layout_marginTop="15dp"
             android:background="@drawable/border"
             android:gravity="center"
             android:orientation="vertical"
@@ -254,46 +169,43 @@
 
                 <ImageView
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_height="28dp"
                     android:layout_marginStart="20dp"
-                    android:src="@drawable/baseline_ev_station_24"
-                    android:contentDescription="@string/dvd" />
+                    android:contentDescription="@string/s"
+                    android:src="@drawable/baseline_local_phone_24" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="10dp"
                     android:fontFamily="@font/montserrat_medium"
-                    android:text="Fuel Type *"
-                    android:textSize="17sp"
-                    tools:ignore="TextContrastCheck" />
+                    android:text="Mobile Number *"
+                    android:textSize="18sp"/>
 
             </LinearLayout>
 
             <EditText
-                android:id="@+id/fuel"
+                android:id="@+id/lastName"
                 android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:layout_marginTop="20dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="15dp"
                 android:background="@drawable/border"
                 android:drawablePadding="8dp"
                 android:fontFamily="@font/montserrat"
-                android:hint="Petrol/Diesel"
+                android:hint="+91123456789"
                 android:inputType="text"
                 android:padding="8dp"
                 android:textColor="@color/black"
                 android:autofillHints=""
                 tools:ignore="VisualLintTextFieldSize" />
 
-
         </LinearLayout>
+
         <LinearLayout
-            android:id="@+id/linearLaascgrtayout17"
+            android:id="@+id/linearLayout17"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginStart="20dp"
-            android:layout_marginTop="20dp"
-            android:layout_marginEnd="20dp"
+            android:layout_marginTop="15dp"
             android:background="@drawable/border"
             android:gravity="center"
             android:orientation="vertical"
@@ -315,56 +227,48 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="20dp"
-                    android:contentDescription="@string/dvsdzv"
-                    android:src="@drawable/baseline_calendar_month_24" />
+                    android:src="@drawable/baseline_password_24"
+                    android:contentDescription="@string/s" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="10dp"
                     android:fontFamily="@font/montserrat_medium"
-                    android:text="@string/manufacturing_year"
-                    android:textSize="17sp"
-                    tools:ignore="TextContrastCheck" />
+                    android:text="Password"
+                    android:textSize="18sp"/>
 
             </LinearLayout>
 
             <EditText
-                android:id="@+id/manfYear"
+                android:id="@+id/lastNaedsgsrme"
                 android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:layout_marginTop="20dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="15dp"
                 android:background="@drawable/border"
                 android:drawablePadding="8dp"
                 android:fontFamily="@font/montserrat"
-                android:hint="@string/_2023"
-                android:inputType="number"
+                android:hint="********"
+                android:inputType="text"
                 android:padding="8dp"
                 android:textColor="@color/black"
                 android:autofillHints=""
                 tools:ignore="VisualLintTextFieldSize" />
 
-
-
-
         </LinearLayout>
+
         <Button
-            android:id="@+id/cnextButton"
+            android:id="@+id/registerBtn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:padding="10dp"
             android:background="@drawable/custom_btn"
-            android:text="@string/qwerftgyhgfdsasdfvgbn"
+            android:text="Register"
             android:layout_marginTop="15dp"
             android:textAllCaps="true"
-            android:layout_marginStart="20dp"
-            android:layout_marginEnd="20dp"
             android:textSize="15sp"
             app:backgroundTint="@null"
             tools:ignore="VisualLintButtonSize"/>
     </LinearLayout>
-
-
-
 </ScrollView>
