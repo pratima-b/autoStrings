@@ -39,10 +39,20 @@ class StatusActivity : AppCompatActivity() {
         val where = findViewById<AutoCompleteTextView>(R.id.where)
         where.setAdapter(arrayAdapter1)
 
-        /*val scheduledWhen = resources.getStringArray(R.array.scheduledWhen)
+        val scheduledWhen = resources.getStringArray(R.array.scheduledWhen)
         val arrayAdapter2: ArrayAdapter<String> = ArrayAdapter(this, R.layout.dropdown, scheduledWhen)
         val whenScheduled = findViewById<AutoCompleteTextView>(R.id.whenScheduled)
-        where.setAdapter(arrayAdapter2)*/
+        whenScheduled.setAdapter(arrayAdapter2)
+
+        val doneOften = resources.getStringArray(R.array.doneWhere)
+        val arrayAdapter3: ArrayAdapter<String> = ArrayAdapter(this, R.layout.dropdown, doneOften)
+        val often = findViewById<AutoCompleteTextView>(R.id.often)
+        often.setAdapter(arrayAdapter3)
+
+        val avg = resources.getStringArray(R.array.avg)
+        val arrayAdapter4: ArrayAdapter<String> = ArrayAdapter(this, R.layout.dropdown, avg)
+        val avgRunning = findViewById<AutoCompleteTextView>(R.id.avgRunning)
+        avgRunning.setAdapter(arrayAdapter4)
 
         val logout = this.findViewById<ImageView>(R.id.logout)
         logout.setOnClickListener {
