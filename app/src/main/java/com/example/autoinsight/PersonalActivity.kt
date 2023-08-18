@@ -6,35 +6,16 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
+import android.widget.ImageView
 import android.widget.Toast
+import com.example.autoinsight.ContactActivity.Companion.a
+import com.example.autoinsight.ContactActivity.Companion.b
+import com.example.autoinsight.ContactActivity.Companion.c
+import com.example.autoinsight.ContactActivity.Companion.d
+import com.example.autoinsight.ContactActivity.Companion.e
+import com.example.autoinsight.ContactActivity.Companion.f
 
 class PersonalActivity : AppCompatActivity() {
-
-    companion object{
-        @SuppressLint("StaticFieldLeak")
-        lateinit var a: EditText
-        @SuppressLint("StaticFieldLeak")
-        lateinit var b: EditText
-        @SuppressLint("StaticFieldLeak")
-        lateinit var c: EditText
-        @SuppressLint("StaticFieldLeak")
-        lateinit var d: EditText
-        @SuppressLint("StaticFieldLeak")
-        lateinit var e: EditText
-        @SuppressLint("StaticFieldLeak")
-        lateinit var f: EditText
-        @SuppressLint("StaticFieldLeak")
-        lateinit var g: EditText
-        @SuppressLint("StaticFieldLeak")
-        lateinit var h: EditText
-        @SuppressLint("StaticFieldLeak")
-        lateinit var i: EditText
-        @SuppressLint("StaticFieldLeak")
-        lateinit var j: EditText
-        @SuppressLint("StaticFieldLeak")
-        lateinit var k: EditText
-    }
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_personal)
@@ -61,6 +42,14 @@ class PersonalActivity : AppCompatActivity() {
                 }
                 startActivity(intent)
             }
+        }
+
+
+        val logout = this.findViewById<ImageView>(R.id.logout)
+        logout.setOnClickListener {
+            val intent = Intent(this, LoginActivity::class.java).apply {
+            }
+            startActivity(intent)
         }
     }
 }

@@ -9,7 +9,7 @@ class DBHelper(context: Context?) :
     SQLiteOpenHelper(context, DB_NAME, null, DB_VER) {
 
     override fun onCreate(sqLiteDatabase: SQLiteDatabase) {
-        val query = "CREATE TABLE users(mobile VARCHAR(10) PRIMARY KEY, fname TEXT , lname TEXT , houseno TEXT , city TEXT , state TEXT , pincode TEXT , manf TEXT , model TEXT, year TEXT, email TEXT )"
+        val query = "CREATE TABLE users(mobile VARCHAR(10) PRIMARY KEY, fname TEXT , lname TEXT , houseno TEXT , city TEXT , state TEXT , pincode TEXT , manf TEXT , model TEXT, year TEXT, email TEXT, regno TEXT, fuel TEXT )"
         sqLiteDatabase.execSQL(query)
     }
 
@@ -18,7 +18,7 @@ class DBHelper(context: Context?) :
         onCreate(sqLiteDatabase)
     }
 
-    fun addData(mobile: String, fname: String, lname: String, houseno: String, city: String, state: String, pincode: String, manf: String, model: String, year: String, email: String): Boolean {
+    fun addData(mobile: String, fname: String, lname: String, houseno: String, city: String, state: String, pincode: String, manf: String, model: String, year: String, email: String, regno: String, fuel: String): Boolean {
         val sqLiteDatabase = this.writableDatabase
         val contentValues = ContentValues()
         try {
@@ -34,6 +34,8 @@ class DBHelper(context: Context?) :
             contentValues.put("year", year)
             contentValues.put("mobile", mobile)
             contentValues.put("email", email)
+            contentValues.put("fuel", fuel)
+            contentValues.put("regno", regno)
 
             sqLiteDatabase.insert("users", null,contentValues)
 

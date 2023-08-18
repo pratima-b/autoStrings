@@ -8,17 +8,7 @@ import android.widget.Button
 import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
-import com.example.autoinsight.PersonalActivity.Companion.a
-import com.example.autoinsight.PersonalActivity.Companion.b
-import com.example.autoinsight.PersonalActivity.Companion.c
-import com.example.autoinsight.PersonalActivity.Companion.d
-import com.example.autoinsight.PersonalActivity.Companion.e
-import com.example.autoinsight.PersonalActivity.Companion.f
-import com.example.autoinsight.PersonalActivity.Companion.g
-import com.example.autoinsight.PersonalActivity.Companion.h
-import com.example.autoinsight.PersonalActivity.Companion.i
-import com.example.autoinsight.PersonalActivity.Companion.j
-import com.example.autoinsight.PersonalActivity.Companion.k
+
 import java.util.Timer
 import java.util.TimerTask
 

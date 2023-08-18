@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".SplashActivity"
-    android:background="#303B79">
+    android:background="#FEC32B">
 
     <ImageView
         android:id="@+id/splashLogo"
@@ -14,7 +14,7 @@
         android:layout_marginStart="10dp"
         android:layout_marginTop="40dp"
         android:layout_marginEnd="10dp"
-        android:src="@drawable/undraw_automobile_repair_ywci__1_"
+        android:src="@drawable/undraw_automobile_repair_ywci__2_"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -25,11 +25,11 @@
         android:id="@+id/appName"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
+
         android:fontFamily="@font/wendy_one"
         android:text="@string/autoinsight"
         android:textAlignment="center"
-        android:textColor="@color/white"
+        android:textColor="@color/blue"
         android:textSize="63sp"
         android:textStyle="italic"
         app:layout_constraintEnd_toEndOf="parent"
@@ -41,14 +41,14 @@
 
     <ImageView
         android:id="@+id/autoStringsLogo"
-        android:layout_width="250dp"
-        android:layout_height="250dp"
-        android:layout_marginTop="672dp"
+        android:layout_width="400dp"
+        android:layout_height="300dp"
+        android:layout_marginTop="600dp"
         android:contentDescription="@string/autoLogo"
         android:foregroundGravity="center"
         android:src="@drawable/logo"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintHorizontal_bias="0.612"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="VisualLintBounds" />

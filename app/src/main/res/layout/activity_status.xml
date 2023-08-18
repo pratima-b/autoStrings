@@ -18,10 +18,20 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
+            <ImageView
+                android:id="@+id/logout"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="right"
+                android:padding="8dp"
+                android:contentDescription="@string/sss"
+                android:src="@drawable/baseline_logout_24"
+                tools:ignore="ImageContrastCheck" />
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="40dp"
+                android:layout_marginTop="20dp"
                 android:fontFamily="@font/poppins_bold"
                 android:text="Status of Service"
                 android:textAlignment="center"
@@ -87,7 +97,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="10dp"
                     android:fontFamily="@font/montserrat_medium"
-                    android:text="Is Service done ?"
+                    android:text="Is Service done ? *"
                     android:textSize="18sp" />
             </LinearLayout>
 
@@ -270,7 +280,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="10dp"
                     android:fontFamily="@font/montserrat_medium"
-                    android:text="Where often you do your vehicle's servicing?"
+                    android:text="Where often you do your vehicle's servicing? *"
                     android:textSize="18sp" />
             </LinearLayout>
 
@@ -331,7 +341,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="10dp"
                     android:fontFamily="@font/montserrat_medium"
-                    android:text="Average running of vehicle per month"
+                    android:text="Average running of vehicle per month *"
                     android:textSize="18sp" />
             </LinearLayout>
 
@@ -356,13 +366,13 @@
             </com.google.android.material.textfield.TextInputLayout>
         </LinearLayout>
         <Button
-            android:id="@+id/pnextButton"
+            android:id="@+id/submit"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:padding="10dp"
             android:background="@drawable/custom_btn"
-            android:text="@string/next"
+            android:text="Submit"
             android:layout_marginTop="15dp"
             android:layout_marginBottom="20dp"
             android:textAllCaps="true"
