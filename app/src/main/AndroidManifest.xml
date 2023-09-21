@@ -14,22 +14,28 @@
         android:theme="@style/Theme.AutoInsight"
         tools:targetApi="31">
         <activity
+            android:name=".DataFeedbackActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SelectActivity"
+            android:exported="false" />
+        <activity
             android:name=".RegisterActivity"
             android:exported="false" />
         <activity
-            android:name=".StatusActivity"
+            android:name=".DataStatusActivity"
             android:exported="false" />
         <activity
             android:name=".LoginActivity"
             android:exported="false" />
         <activity
-            android:name=".ContactActivity"
+            android:name=".DataContactActivity"
             android:exported="false" />
         <activity
-            android:name=".CarActivity"
+            android:name=".DataCarActivity"
             android:exported="false" />
         <activity
-            android:name=".PersonalActivity"
+            android:name=".DataPersonalActivity"
             android:exported="false" />
         <activity
             android:name=".SplashActivity"
@@ -41,7 +47,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".OtpActivity"
+            android:name=".DataOtpActivity"
             android:exported="false" />
 
         <meta-data

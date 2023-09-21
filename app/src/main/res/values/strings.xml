@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">autoInsight</string>
+    <string name="app_name">autoStrings</string>
     <string name="todo">TODO</string>
     <string name="otp_verification">OTP Verification</string>
     <string name="enter_one_time_password_sent_on_your_mobile_number">Enter one time password sent on your mobile number</string>
@@ -73,5 +73,19 @@
         <item>1K - 2K</item>
         <item>2K - 3K</item>
         <item>3K - above</item>
+    </string-array>
+
+    <string-array name="fuelType">
+        <item>Petrol</item>
+        <item>Diesel</item>
+        <item>CNG</item>
+        <item>Hybrid</item>
+        <item>Electric</item>
+    </string-array>
+
+    <string-array name="carSegment">
+        <item>Small</item>
+        <item>Medium</item>
+        <item>Large</item>
     </string-array>
 </resources>

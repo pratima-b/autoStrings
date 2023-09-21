@@ -1,24 +1,22 @@
 package com.example.autoinsight
 
-import android.annotation.SuppressLint
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
-import android.widget.EditText
 import android.widget.ImageView
 import android.widget.Toast
-import com.example.autoinsight.ContactActivity.Companion.a
-import com.example.autoinsight.ContactActivity.Companion.b
-import com.example.autoinsight.ContactActivity.Companion.c
-import com.example.autoinsight.ContactActivity.Companion.d
-import com.example.autoinsight.ContactActivity.Companion.e
-import com.example.autoinsight.ContactActivity.Companion.f
+import com.example.autoinsight.DataContactActivity.Companion.a
+import com.example.autoinsight.DataContactActivity.Companion.b
+import com.example.autoinsight.DataContactActivity.Companion.c
+import com.example.autoinsight.DataContactActivity.Companion.d
+import com.example.autoinsight.DataContactActivity.Companion.e
+import com.example.autoinsight.DataContactActivity.Companion.f
 
-class PersonalActivity : AppCompatActivity() {
+class DataPersonalActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_personal)
+        setContentView(R.layout.activity_datapersonal)
 
         a = this.findViewById(R.id.firstName)
         b = this.findViewById(R.id.lastName)
@@ -38,7 +36,7 @@ class PersonalActivity : AppCompatActivity() {
                     .show()
             }
             else {
-                val intent = Intent(this, CarActivity::class.java).apply {
+                val intent = Intent(this, DataCarActivity::class.java).apply {
                 }
                 startActivity(intent)
             }

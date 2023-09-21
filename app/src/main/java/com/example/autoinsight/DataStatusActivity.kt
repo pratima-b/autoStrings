@@ -6,28 +6,29 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.ArrayAdapter
 import android.widget.AutoCompleteTextView
+import android.widget.Button
 import android.widget.ImageView
 import android.widget.Toast
-import com.example.autoinsight.ContactActivity.Companion.a
-import com.example.autoinsight.ContactActivity.Companion.b
-import com.example.autoinsight.ContactActivity.Companion.c
-import com.example.autoinsight.ContactActivity.Companion.d
-import com.example.autoinsight.ContactActivity.Companion.e
-import com.example.autoinsight.ContactActivity.Companion.f
-import com.example.autoinsight.ContactActivity.Companion.g
-import com.example.autoinsight.ContactActivity.Companion.h
-import com.example.autoinsight.ContactActivity.Companion.i
-import com.example.autoinsight.ContactActivity.Companion.j
-import com.example.autoinsight.ContactActivity.Companion.k
-import com.example.autoinsight.ContactActivity.Companion.l
-import com.example.autoinsight.ContactActivity.Companion.m
+import com.example.autoinsight.DataContactActivity.Companion.a
+import com.example.autoinsight.DataContactActivity.Companion.b
+import com.example.autoinsight.DataContactActivity.Companion.c
+import com.example.autoinsight.DataContactActivity.Companion.d
+import com.example.autoinsight.DataContactActivity.Companion.e
+import com.example.autoinsight.DataContactActivity.Companion.f
+import com.example.autoinsight.DataContactActivity.Companion.g
+import com.example.autoinsight.DataContactActivity.Companion.h
+import com.example.autoinsight.DataContactActivity.Companion.i
+import com.example.autoinsight.DataContactActivity.Companion.j
+import com.example.autoinsight.DataContactActivity.Companion.k
+import com.example.autoinsight.DataContactActivity.Companion.l
+import com.example.autoinsight.DataContactActivity.Companion.m
 
 
-class StatusActivity : AppCompatActivity() {
+class DataStatusActivity : AppCompatActivity() {
     @SuppressLint("MissingInflatedId")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_status)
+        setContentView(R.layout.activity_datastatus)
 
         val services = resources.getStringArray(R.array.services)
         val arrayAdapter = ArrayAdapter(this, R.layout.dropdown, services)
@@ -54,6 +55,13 @@ class StatusActivity : AppCompatActivity() {
         val avgRunning = findViewById<AutoCompleteTextView>(R.id.avgRunning)
         avgRunning.setAdapter(arrayAdapter4)
 
+        val snext = this.findViewById<Button>(R.id.snext)
+        snext.setOnClickListener {
+            val intent = Intent(this, DataFeedbackActivity::class.java).apply {
+            }
+            startActivity(intent)
+        }
+
         val logout = this.findViewById<ImageView>(R.id.logout)
         logout.setOnClickListener {
             val intent = Intent(this, LoginActivity::class.java).apply {
@@ -61,7 +69,7 @@ class StatusActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
-        val dbHelper = DBHelper(applicationContext)
+       /* val dbHelper = DBHelper(applicationContext)
 
         dbHelper.addData(
             j.text.toString(),
@@ -83,7 +91,7 @@ class StatusActivity : AppCompatActivity() {
             applicationContext,
             "data added",
             Toast.LENGTH_SHORT)
-            .show()
+            .show()*/
 
     }
 }

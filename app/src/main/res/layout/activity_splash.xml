@@ -21,34 +21,16 @@
         app:layout_constraintTop_toTopOf="parent"
         android:contentDescription="@string/splash" />
 
-    <TextView
-        android:id="@+id/appName"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-
-        android:fontFamily="@font/wendy_one"
-        android:text="@string/autoinsight"
-        android:textAlignment="center"
-        android:textColor="@color/blue"
-        android:textSize="63sp"
-        android:textStyle="italic"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/splashLogo"
-        tools:ignore="VisualLintOverlap" />
-
 
     <ImageView
         android:id="@+id/autoStringsLogo"
-        android:layout_width="400dp"
-        android:layout_height="300dp"
-        android:layout_marginTop="600dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="524dp"
         android:contentDescription="@string/autoLogo"
         android:foregroundGravity="center"
-        android:src="@drawable/logo"
+        android:src="@drawable/autostringslog"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.612"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="VisualLintBounds" />

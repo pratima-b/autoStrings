@@ -11,7 +11,7 @@ import androidx.appcompat.app.AppCompatActivity
 import com.hbb20.CountryCodePicker
 
 
-class ContactActivity : AppCompatActivity() {
+class DataContactActivity : AppCompatActivity() {
 
     companion object{
         @SuppressLint("StaticFieldLeak")
@@ -43,7 +43,7 @@ class ContactActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_contact)
+        setContentView(R.layout.activity_datacontact)
 
         val ccp: CountryCodePicker = this.findViewById(R.id.countryCodeHolder)
         j = this.findViewById(R.id.mobile)
@@ -60,7 +60,7 @@ class ContactActivity : AppCompatActivity() {
                     Toast.LENGTH_SHORT)
                     .show()
             } else {
-                val intent = Intent(this, OtpActivity::class.java).apply {
+                val intent = Intent(this, DataOtpActivity::class.java).apply {
                 }
                 startActivity(intent)
             }

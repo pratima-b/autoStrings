@@ -6,14 +6,10 @@ import android.os.Bundle
 import android.os.CountDownTimer
 import android.widget.Button
 import android.widget.TextView
-import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 
-import java.util.Timer
-import java.util.TimerTask
 
-
-class OtpActivity : AppCompatActivity() {
+class DataOtpActivity : AppCompatActivity() {
 
     private lateinit var resendTextView: TextView
     private lateinit var countDownTimer: CountDownTimer
@@ -23,39 +19,17 @@ class OtpActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
 
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_otp)
+        setContentView(R.layout.activity_dataotp)
 
         val verify = this.findViewById<Button>(R.id.verify)
         verify.setOnClickListener {
-            val intent = Intent(this, PersonalActivity::class.java).apply {
+            val intent = Intent(this, DataPersonalActivity::class.java).apply {
             }
             startActivity(intent)
         }
 
         resendTextView = findViewById(R.id.resendTextView)
         startCountdownTimer()
-
-        /*val dbHelper = DBHelper(applicationContext)
-
-        dbHelper.addData(
-            j.text.toString(),
-            a.text.toString(),
-            b.text.toString(),
-            c.text.toString(),
-            d.text.toString(),
-            e.text.toString(),
-            f.text.toString(),
-            g.text.toString(),
-            h.text.toString(),
-            i.text.toString(),
-            k.text.toString()
-        )
-
-        Toast.makeText(
-            applicationContext,
-            "data added",
-            Toast.LENGTH_SHORT)
-            .show()*/
 
     }
     private fun startCountdownTimer() {
