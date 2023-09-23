@@ -19,7 +19,7 @@ class SelectActivity : AppCompatActivity() {
 
         val carWashing = this.findViewById<Button>(R.id.carWashingBtn)
         carWashing.setOnClickListener {
-            val intent = Intent(this, DataContactActivity::class.java).apply {
+            val intent = Intent(this, WashContactActivity::class.java).apply {
             }
             startActivity(intent)
         }
